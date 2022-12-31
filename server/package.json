@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "16.17.1",
+  "description": "creates connection with mongodb and openAI api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharmen8980/MERN_with_Chatbot.git"
+  },
+  "keywords": [
+    "MERN",
+    "CHATBOT",
+    "CHATGPT",
+    "OPENAI",
+    "MONGODB",
+    "REACT"
+  ],
+  "author": "Dharmendra Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharmen8980/MERN_with_Chatbot/issues"
+  },
+  "homepage": "https://github.com/dharmen8980/MERN_with_Chatbot#readme"
+}
