@@ -1,0 +1,121 @@
+.active {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 3px 0 0 #969595;
+}
+
+.navbar {
+  padding: 0 2rem;
+  background-color: #ffffff;
+  height: 3.5rem;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 675px) {
+  .navbar {
+    display: none;
+  }
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 3.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.navbar-container-logo {
+  display: flex;
+  width: 100%;
+}
+.navbar-container-logo-name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+}
+.navbar-container-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 400px;
+}
+.navbar-links-item {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+}
+.navbar-links-item-linkedin {
+  margin-top: 0.2rem;
+  color: #0077b5;
+}
+.navbar-links-item-github {
+  margin-top: 0.2rem;
+  color: #000000;
+}
+
+.mobile {
+  padding: 0 2rem;
+  background-color: #ffffff;
+  height: 3.5rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (min-width: 675px) {
+  .mobile {
+    display: none;
+  }
+}
+.mobile-logo-name {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+.mobile-menu {
+  font-size: 1.8rem;
+  color: #000000;
+}
+.mobile-container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 2rem auto;
+  top: 1.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-container-item {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+}
+.mobile table {
+  background-color: #969595;
+}
+.mobile tr td {
+  padding: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.mobile tr td:hover {
+  background-color: #b8b7b7;
+}
