@@ -1,10 +1,12 @@
-import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SiChatbot } from "react-icons/si";
 import { ImCancelCircle } from "react-icons/im";
-import Chatbot from "./chatbot";
-import Test from "./test";
+import Chatbot from "./pages/chatbot";
+import Home from "./pages/home";
+import Navbar from "./components/navbar";
+import Product from "./pages/products";
+import Cart from "./pages/cart";
 
 function App() {
   const [showChat, setShowChat] = useState(false);
@@ -13,13 +15,13 @@ function App() {
       <SiChatbot
         className={
           !showChat
-            ? "text-green-600 text-4xl fixed bottom-4 right-6 cursor-pointer"
+            ? "text-green-600 text-4xl fixed bottom-4 right-6 cursor-pointer z-40"
             : "hidden"
         }
         onClick={() => setShowChat(true)}
       />
       <div
-        className={showChat ? "w-[25rem] absolute right-2 bottom-0" : "hidden"}
+        className={showChat ? "w-[25rem] fixed right-2 bottom-0 z-40" : "hidden"}
       >
         <p className="flex justify-end mr-2 relative text-white">
           <ImCancelCircle
@@ -27,12 +29,15 @@ function App() {
             onClick={() => setShowChat(false)}
           />
         </p>
-        <Chatbot />
+        <Chatbot  />
       </div>
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Test />} />
+          <Route path="/" element={<Home />} />
           <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/products" element={<Product/>} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </div>
