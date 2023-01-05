@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Navbar from "./components/navbar";
 import Product from "./pages/products";
 import Cart from "./pages/cart";
+import Test from "./pages/test";
 
 function App() {
   const [showChat, setShowChat] = useState(false);
@@ -34,14 +35,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          <Route path="/products" element={<Product/>} />
-          <Route path="/cart" element={<Cart />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact  path="/chatbot" element={<Chatbot />} />
+          <Route exact path="/products" element={<Product/>} />
+          <Route exact path="/cart" element={<Cart />} />
+          <Route exact path="/test" element={<Test/>} />
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default React.memo(App);
