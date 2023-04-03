@@ -1,0 +1,29 @@
+
+> server@16.17.1 dev
+> nodemon index.js
+
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node index.js`[39m
+Server listening on port 4000
+hello
+
+  Hi there! Welcome to our poster shop. We specialize in posters of One Piece characters, including Zoro, Sanji, Shanks, Ace, and Luffy. Is there anything in particular you're looking for? 😊
+
+what do you have
+
+  We have posters of Zoro, Sanji, Shanks, Ace, and Luffy. You can find the best selling ones under our 'Best Seller' section. Let me know if you need any help finding something. 😊
+how can you help me
+
+  Sure! We have a wide selection of posters featuring Zoro, Sanji, Shanks, Ace, and Luffy. What kind of poster were you looking for? 😊
+hello
+
+  Hi there! Welcome to our poster shop. We specialize in posters of One Piece characters, including Zoro, Sanji, Shanks, Ace, and Luffy. Is there anything in particular you're looking for? 😊
+what I the maximum size do you have?
+
+  We have posters of up to 24 inches in size. You can find them in our 'Large Posters' section. :)
+how can i hang it
+
+  Sure! We have a variety of hanging options available. You can find them in our accessories section. Let us know if you need any help with that. :)
